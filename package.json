@@ -1,36 +1,37 @@
 {
     "name": "binance-bot",
-  "version": "1.0.0",
-  "description": "A TypeScript bot for Binance trading",
-  "main": "src/index.ts",
-  "scripts": {
-    "start": "ts-node -r tsconfig-paths/register src/index.ts",
-    "dev": "ts-node-dev --respawn --transpile-only -r tsconfig-paths/register src/index.ts",
-    "test": "jest --passWithNoTests",
-    "test:coverage": "jest --coverage",
-    "format": "biome format src tests --write",
-    "lint": "biome lint src tests",
-    "clean": "rimraf dist coverage",
-    "commit-msg": "node scripts/verify-commit-msg.js"
-  },
-  "dependencies": {
-    "@binance/connector": "^3.0.0",
-    "dotenv": "^16.4.4",
-    "ts-node": "^10.9.2"
-  },
-  "devDependencies": {
-    "@biomejs/biome": "1.5.3",
-    "@types/jest": "^29.5.12",
-    "@types/node": "^20.11.19",
-    "husky": "^8.0.0",
-    "jest": "^29.7.0",
-    "rimraf": "^5.0.5",
-    "ts-jest": "^29.1.2",
-    "ts-node-dev": "^2.0.0",
-    "tsconfig-paths": "^4.2.0",
-    "typescript": "^5.3.3"
-  },
-  "keywords": [],
-  "author": "Alan Gustavo",
-  "license": "ISC"
+    "version": "1.0.0",
+    "description": "A TypeScript bot for Binance trading",
+    "main": "src/index.ts",
+    "scripts": {
+        "start": "ts-node -r tsconfig-paths/register src/index.ts",
+        "dev": "ts-node-dev --respawn --transpile-only -r tsconfig-paths/register src/index.ts",
+        "test": "jest --passWithNoTests",
+        "test:coverage": "jest --coverage",
+        "format": "biome format src tests --write",
+        "lint": "biome lint src tests",
+        "clean": "rimraf dist coverage",
+        "commit-msg": "node scripts/verify-commit-msg.js",
+        "convert-endings": "ts-node scripts/convert-line-endings.ts"
+    },
+    "dependencies": {
+        "@binance/connector": "^3.0.0",
+        "dotenv": "^16.4.4",
+        "ts-node": "^10.9.2"
+    },
+    "devDependencies": {
+        "@biomejs/biome": "1.5.3",
+        "@types/jest": "^29.5.12",
+        "@types/node": "^20.11.19",
+        "husky": "^8.0.0",
+        "jest": "^29.7.0",
+        "rimraf": "^5.0.5",
+        "ts-jest": "^29.1.2",
+        "ts-node-dev": "^2.0.0",
+        "tsconfig-paths": "^4.2.0",
+        "typescript": "^5.3.3"
+    },
+    "keywords": [],
+    "author": "Alan Gustavo",
+    "license": "ISC"
 }

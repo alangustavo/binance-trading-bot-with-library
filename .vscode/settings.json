@@ -1,11 +1,12 @@
 {
   "editor.formatOnSave": true,
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.defaultFormatter": "biomejs.biome",
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": "explicit"
+    "source.fixAll": "explicit"
   },
   "typescript.tsdk": "node_modules/typescript/lib",
   "jest.runMode": "on-demand",
+  "files.eol": "\n",
   "[typescript]": {
     "editor.defaultFormatter": "biomejs.biome"
   }
